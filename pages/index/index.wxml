@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="contentList">
+    <view class="contentList-title">工具列表</view>
+    <view class="contentList-list">
+      <view bindtap="toMusic" class="contentList-li">音乐馆</view>
+    </view>
+  </view>
+</view>

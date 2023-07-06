@@ -1,0 +1,28 @@
+.container{
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+}
+.contentList{
+	width: calc(100% - 20px);
+	background:  #d0b3a921;
+	margin: 10px;
+	border-radius: 5px;
+}
+.contentList-title{
+	border-radius: 5px 5px 0 0;
+	color: #ffffff;
+	background: #d0b3a9;
+	line-height: 2;
+	padding-left: 10px;
+}
+.contentList-list{
+	margin: 10px;
+}
+.contentList-li{
+	padding: 5px 20px;
+	color: #333333;
+	display: inline-block;
+	background: #d0b3a971;
+	border-radius: 20px;
+}

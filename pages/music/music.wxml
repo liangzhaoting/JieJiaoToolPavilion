@@ -1,0 +1,29 @@
+<!--pages/music/music.wxml-->
+<view class="container">
+  <view class="swiperList">
+    <swiper indicator-dots autoplay circular previous-margin="25px" 	next-margin="25px">
+        <block wx:for="{{musicList}}" wx:key="id">
+          <swiper-item>
+            <view class="swiper-item">
+            <image src="{{item.picurl}}"></image>
+            <p class="swiper-item-msg">{{item.name}}---{{item.artistsname}}</p>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+  </view>
+  <view class="musicList">
+    <view class="musicList-title">歌曲列表<text>{{musicList.length}}首歌</text></view>
+    <view class="musicList-li thead">
+      <view class="musicList-li-index">序号</view>
+      <view class="musicList-li-name">曲名</view>
+      <view class="musicList-li-artistsname">歌手</view>
+    </view>
+    <view class="musicList-li" wx:for="{{musicList}}" wx:key="id">
+      <view class="musicList-li-index">{{index+1}}</view>
+      <view class="musicList-li-name">{{item.name}}</view>
+      <view class="musicList-li-artistsname">{{item.artistsname}}</view>
+    </view>
+  </view>
+</view>
+
